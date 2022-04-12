@@ -1,0 +1,5 @@
+https://github.com/BYU-ITC-210/lab-2b-taylebruin.git
+
+gh repo clone BYU-ITC-210/lab-2b-taylebruin
+
+GITHUB links

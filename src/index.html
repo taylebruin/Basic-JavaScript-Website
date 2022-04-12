@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add an appropriate title in this tag -->
+    <title>Taylers Amazing Website</title>
+    <nav>
+        <a href="https://unsplash.com/s/photos/turtle">Turtle Photos | </a>
+        <a href="https://unsplash.com/s/photos/kittens">Kitten Photos | </a>
+        <a href="https://unsplash.com/s/photos/goats">Goat Photos</a>
+    </nav>
+    <h1>Awesome Animal Tasks</h1>
+    <!-- Links to stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="readStorage()">
+    <br>
+    <input type="checkbox" id="dates" class="toggle-switch" onclick="sortByDate()">
+    <label for="dates">sort by date</label>
+    <input type="checkbox" id="tasks" class="toggle-switch" onclick="sortByDone()">
+    <label for="tasks">filter completed tasks</label>
+    <ul class="tasklist" id = "list">
+  
+    </ul>
+    <form class="form-create-task" onsubmit="createTask(event)">
+        <label for="action">Action Needed:</label>
+        <input type="text" class="form-settings" name="action" id="actionText" placeholder="Enter a task" oninput="saveInputText()" required> <br>
+        <label for="date completed">Date to complete:</label>
+        <input type="date" id="date completed" name="date" oninput="saveInputDate()"><br>
+        <button class="pretty-button">Create Action</button>
+    </form>
+    <!-- Your visible elements -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
